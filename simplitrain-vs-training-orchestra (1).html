@@ -131,7 +131,7 @@ body {
   gap: 0;
   justify-content: center;
   align-items: stretch;
-  max-width: 680px;
+  max-width: 100%;
   margin: 0 auto;
   flex-direction: column;
   gap: 28px;
@@ -545,6 +545,19 @@ details[open].faq-item summary::after { content: '−'; }
   .site-nav { padding: 14px 20px; }
   .nav-links { display: none; }
 }
+@media (max-width: 768px) {
+  .pricing-tier {
+    flex-direction: column;
+  }
+  .tier-savings-bar {
+    width: 100%;
+    height: 3px;
+    min-height: auto;
+  }
+  .tier-savings-badge {
+    padding: 16px 20px;
+  }
+}
 </style>
 </head>
 <body>
@@ -579,7 +592,7 @@ details[open].faq-item summary::after { content: '−'; }
      SAVINGS / PRICING TIERS
 ════════════════════════════════════════════════ -->
 <section class="savings-section">
-  <div class="wrap">
+  <div class="wrap-lg">
     <p class="savings-headline">Run all your instructor-led training from <strong>one platform</strong>.</p>
     <p class="savings-sub">Teams moving to SimpliTrain typically eliminate 2–3 vendor contracts, and flat-rate pricing means your costs don't grow as your training programs scale.</p>
 
@@ -631,7 +644,7 @@ details[open].faq-item summary::after { content: '−'; }
 
     </div>
 
-    <div class="disclaimer-box" style="max-width:680px; margin:28px auto 0;">
+    <div class="disclaimer-box" style="max-width:100%; margin:28px auto 0;">
       <p><strong>Disclaimer:</strong> Training Orchestra pricing figures are sourced from third-party software review directories as of June 2025 and are subject to change. Verify current pricing directly with Training Orchestra. SimpliTrain pricing is published at simplitrain.com/pricing.</p>
     </div>
   </div>
